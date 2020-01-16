@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-a11y",
+    "stylelint-scss"
+  ],
+  "defaultSeverity": "warning",
+  "rules": {
+    "declaration-empty-line-before": [
+      "never",
+      {
+        "ignore": [
+          "after-declaration"
+        ]
+      }
+    ],
+
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "a11y/no-outline-none": true,
+    "a11y/selector-pseudo-class-focus": true,
+    "a11y/no-obsolete-attribute": true,
+    "a11y/no-obsolete-element": true,
+
+    "scss/comment-no-loud": true,
+    "scss/double-slash-comment-inline": [
+      "never",
+      {
+        "ignore": [
+          "stylelint-commands"
+        ]
+      }
+    ],
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/selector-no-redundant-nesting-selector": true
+  }
+}

@@ -1,0 +1,9 @@
+build
+config
+
+node_modules/
+jest.config.js
+
+*.css
+*.scss
+*.json
